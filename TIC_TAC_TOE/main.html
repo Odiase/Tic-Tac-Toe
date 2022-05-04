@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="outer-container">
+
+        <div class="status"></div>
+
+        <h1 id="game-name">Tic <span>Tac</span> <span>Toe</span></h1>
+        <form action="" class="player-form">
+            <div class="player1-container">
+                <input type="text" id="player1-name" placeholder="player 1 kindly Enter Your Name">
+                <input type="text" id="player1-avatar" placeholder="Enter 'X' or 'O' ">
+            </div>
+
+            <div class="player2-container">
+                <input type="text" id="player2-name" placeholder="Player 2 kindly Enter Your Name">
+                <input type="text" id="player2-avatar" placeholder="Enter 'X' or 'O' ">
+            </div>
+            <p class="player-info-submit">Submit</p>
+        </form>
+        <div class="game-container">
+            <div class="game-box">X</div>
+            <div class="game-box">O</div>
+            <div class="game-box">X</div>
+            <div class="game-box">O</div>
+            <div class="game-box">O</div>
+            <div class="game-box">X</div>
+            <div class="game-box">X</div>
+            <div class="game-box">O</div>
+            <div class="game-box">X</div>
+        </div>
+        <button id="start-button">Click to play</button>
+        <div class="error">
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

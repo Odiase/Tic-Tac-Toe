@@ -1,0 +1,136 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.outer-container{
+    width: 100%;
+    height: 100vh;
+    background: #936779;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.player-form{
+    position: absolute;
+    top: 80px;
+    display: none;
+}
+.player-form input{
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 200px;
+    margin: 4px 10px;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+#game-name{
+    position: absolute;
+    top: 4%;
+    color: rgb(235, 227, 227);
+    font-size: 2.2rem;
+    font-style: oblique;
+}
+.player-info-submit{
+    text-align: center;
+    margin: 10px;
+    padding: 8px 12px;
+    font-weight: bolder;
+    background: rgb(114, 16, 16);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+span:first-child{
+    color: rgb(75, 3, 3);
+}
+span:nth-child(2){
+    color: rgb(13, 104, 13);
+}
+.game-container{
+    width: 70%;
+    max-height: 1300px;
+    background: rgb(75, 75, 110);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: 80px;
+}
+.status{
+    position: absolute;
+    top: 15%;
+    font-size: 2rem;
+    font-family: fantasy;
+    font-style: oblique;
+    display: none;
+}
+.game-box,.game-box2{
+    flex-basis: 33%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(38, 38, 122);
+    border: 1px solid rgb(156, 153, 153);
+    font-weight: bolder;
+    font-size: 2rem;
+    color: rgb(182, 178, 178);
+}
+#start-button{
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 5%;
+    padding: 15px 25px;
+    border: none;
+    background: rgb(29, 68, 29);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    animation: button-effect 1s infinite;
+}
+#submit-btn{
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    padding: 15px 20px;
+    display: none;
+    background: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.error{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 40px;
+    display: none;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+@keyframes button-effect{
+    30%{
+        transform: scale(1.01);
+    }
+    50%{
+        transform: scale(1.05)
+    }
+    70%{
+        transform: scale(1.08)
+    }
+    100%{
+        transform: scale(1.13)
+    }
+}
+
+
+
+@media screen and (min-height:601px){
+    .game-box,.game-box2,.game-box3{
+        height:120px
+    }
+}
